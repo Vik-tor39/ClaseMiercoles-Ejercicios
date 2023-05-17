@@ -11,7 +11,14 @@ int main(){
     }
     for(int i=0;i<=fil;i++){
         for(int j=0;j<=col;j++){
-            printf("%d",matriz[i][j]);
+            if(i==j){
+                matriz[fil][col]=1;
+            }
+        }
+    }
+    for(int i=0;i<=fil;i++){
+        for(int j=0;j<=col;j++){
+            printf("%d",matriz[fil][col]);
         }
         printf("\n");
     }
